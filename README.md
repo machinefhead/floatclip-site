@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34589158/README.md)
 # FloatClip
 
 **Copy & Paste. Right where you work.**
