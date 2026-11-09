@@ -3,40 +3,118 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Official information, privacy policy and support for FloatClip by machinefhead.">
-  <title>FloatClip — Windows 11 Copy &amp; Paste</title>
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="FloatClip is a lightweight, native Windows 11 utility that keeps Copy and Paste within easy reach. Move, dock, or auto-hide the floating toolbar. No accounts, analytics, or telemetry.">
+  <title>FloatClip — Copy and paste, always within reach</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main">Skip to content / Preskoči na vsebino</a>
-<header class="topbar"><div class="shell">
-  <a class="brand" href="index.html" aria-label="FloatClip home"><span class="mark" aria-hidden="true"><span></span><span></span><i>•••</i></span>FloatClip</a>
-  <nav class="nav" aria-label="Main navigation">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="privacy.html" >Privacy</a>
-    <a href="support.html" >Support</a>
-  </nav>
-</div></header>
-<main id="main" class="shell">
-<div class="hero">
-  <div class="kicker">A lightweight Windows utility</div>
-  <h1>Copy and paste, always within reach.</h1>
-  <p class="lede">FloatClip puts compact floating Copy and Paste controls on your Windows 11 desktop. Designed to be simple, responsive, and local.</p>
-  <div class="actions"><a class="pill primary" href="privacy.html">Privacy policy</a><a class="pill" href="support.html">Get support</a></div>
-</div>
-<div class="section"><div class="grid">
-  <article class="panel"><h3>Simple controls</h3><p>Standard and Single modes, familiar Windows shortcuts, and a compact tray menu.</p></article>
-  <article class="panel"><h3>Out of the way</h3><p>Move, lock, snap, auto-hide, and follow the screen edges when needed.</p></article>
-  <article class="panel"><h3>Local by design</h3><p>No FloatClip account, telemetry, advertisements, or cloud sync.</p></article>
-</div></div>
-<div class="section lang-section" id="slovenian" lang="sl"><div class="panel">
-  <div class="kicker">Slovenščina</div><h2>FloatClip: kopiraj in prilepi z enim klikom.</h2>
-  <p>Lahek pripomoček za Windows 11 s plavajočima gumboma Copy in Paste. Ohranja preprostost, odzivnost in lokalno delovanje.</p>
-  <div class="actions"><a class="pill" href="privacy.html#slovenian">Pravilnik zasebnosti</a><a class="pill" href="support.html#slovenian">Podpora</a></div>
-</div></div>
-<p class="small">Publisher / Založnik: machinefhead. This is an information and support site; downloads and Store availability will be announced only after release.</p>
+<header class="topbar">
+  <div class="shell headbar">
+    <a class="brand" href="index.html" aria-label="FloatClip home"><span class="mark" aria-hidden="true"><span></span><span></span><i>•••</i></span>FloatClip</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero-home shell" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Native utility for Windows 11</span>
+      <h1 id="hero-title">Copy &amp; Paste.<br><span>Right where you work.</span></h1>
+      <p class="intro-lede">FloatClip puts a compact floating toolbar within easy reach. Copy, paste, move, dock, or let it hide along the edge of your screen.</p>
+      <div class="hero-actions">
+        <a class="pill primary" href="#screenshots">Explore FloatClip <span aria-hidden="true">↘</span></a>
+        <a class="pill" href="privacy.html">Privacy first</a>
+      </div>
+      <p class="availability">Microsoft Store release in preparation · No download is offered yet</p>
+    </div>
+    <figure class="hero-visual">
+      <div class="visual-shine" aria-hidden="true"></div>
+      <img src="assets/hero-real.webp" width="1430" height="765" loading="eager" fetchpriority="high" alt="Actual Windows 11 desktop showing a text selection in Notepad and the real FloatClip Copy and Paste toolbar beside it.">
+      <figcaption><span class="tiny-dot" aria-hidden="true"></span> Actual FloatClip on Windows 11</figcaption>
+    </figure>
+  </section>
 
+  <section class="essentials shell" aria-label="FloatClip at a glance">
+    <div class="essential"><strong>Native &amp; lightweight</strong><span>Small, responsive Windows utility</span></div>
+    <div class="essential"><strong>Work your way</strong><span>Free · Snap · Auto-hide</span></div>
+    <div class="essential"><strong>Local by design</strong><span>No FloatClip cloud or telemetry</span></div>
+  </section>
+
+  <section class="features shell" id="features" aria-labelledby="features-title">
+    <div class="section-heading">
+      <p class="eyebrow">The essentials</p>
+      <h2 id="features-title">Small on screen.<br><span>Ready when you need it.</span></h2>
+      <p>Every screenshot below is taken from the real app. No recreated interface or imaginary controls.</p>
+    </div>
+    <div class="feature-grid" id="screenshots">
+      <article class="feature-card feature-card-wide">
+        <div class="feature-text">
+          <span class="feature-index">01 / Everyday actions</span>
+          <h3>Copy &amp; Paste, close at hand</h3>
+          <p>Keep the familiar actions near your work, with additional click gestures for Select All and Enter.</p>
+        </div>
+        <div class="feature-media">
+          <img src="assets/copy-real.webp" width="1440" height="685" loading="lazy" alt="Real FloatClip toolbar beside selected text in Windows Notepad.">
+        </div>
+      </article>
+      <article class="feature-card">
+        <div class="feature-text">
+          <span class="feature-index">02 / Edge behavior</span>
+          <h3>Move it. Dock it. Hide it.</h3>
+          <p>Drag your toolbar, snap it to the edge, or use a compact hidden tab when Auto-hide is enabled.</p>
+        </div>
+        <div class="feature-pair">
+          <figure><img src="assets/dock-real.webp" width="1340" height="600" loading="lazy" alt="FloatClip docked vertically at the left edge of the Windows 11 desktop."><figcaption>Docked</figcaption></figure>
+          <figure><img src="assets/hidden-real.webp" width="1340" height="585" loading="lazy" alt="FloatClip shown as a narrow hidden tab on the left screen edge."><figcaption>Auto-hide</figcaption></figure>
+        </div>
+      </article>
+      <article class="feature-card">
+        <div class="feature-text">
+          <span class="feature-index">03 / Appearance &amp; behavior</span>
+          <h3>Make it yours</h3>
+          <p>Choose your theme, size, control mode, opacity, orientation and edge behavior.</p>
+        </div>
+        <div class="feature-pair settings-pair">
+          <figure><img src="assets/settings-dark.webp" width="865" height="700" loading="lazy" alt="Real FloatClip Settings window, dark Behavior tab."><figcaption>Dark</figcaption></figure>
+          <figure><img src="assets/settings-light.webp" width="865" height="700" loading="lazy" alt="Real FloatClip Settings window, light Appearance tab."><figcaption>Light</figcaption></figure>
+        </div>
+      </article>
+      <article class="feature-card feature-card-wide intro-card">
+        <div class="feature-text">
+          <span class="feature-index">04 / Getting started</span>
+          <h3>A quick introduction</h3>
+          <p>Discover the gestures, docking and Auto-hide options in a short, three-step walkthrough.</p>
+        </div>
+        <div class="feature-media intro-media">
+          <img src="assets/intro-real.webp" width="840" height="665" loading="lazy" alt="The actual FloatClip Quick Intro window explaining Drag, Flick and Dock gestures.">
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="privacy-band shell" aria-labelledby="privacy-title">
+    <div>
+      <p class="eyebrow">Local by design</p>
+      <h2 id="privacy-title">Simple tools. Your desktop. Your data.</h2>
+      <p>FloatClip has no developer-operated account, cloud synchronization, advertisements, analytics or telemetry. It sends Windows shortcuts to the active app and does not maintain its own clipboard history.</p>
+    </div>
+    <a class="pill" href="privacy.html">Read our privacy policy</a>
+  </section>
+
+  <section class="slovenian-band shell lang-section" id="slovenian" lang="sl" aria-labelledby="slovenian-title">
+    <p class="eyebrow">Slovenščina</p>
+    <h2 id="slovenian-title">FloatClip — kopiraj in prilepi, vedno pri roki.</h2>
+    <p>Lahek pripomoček za Windows 11 s plavajočima gumboma Copy in Paste. Kapsulo lahko premikaš, pripneš na rob ali samodejno skriješ. Brez uporabniškega računa ali telemetrije.</p>
+    <div class="hero-actions"><a class="pill" href="privacy.html#slovenian">Pravilnik zasebnosti</a><a class="pill" href="support.html#slovenian">Podpora</a></div>
+  </section>
+  <p class="shell release-note">Publisher / Založnik: machinefhead. The Microsoft Store release is being prepared; download links will be published only after release.</p>
 </main>
 <footer class="footer"><div class="shell"><span>FloatClip · machinefhead · 2026</span><div class="footer-links"><a href="privacy.html">Privacy / Zasebnost</a><a href="support.html">Support / Podpora</a></div></div></footer>
 </body>
