@@ -34,3 +34,10 @@ Review links, language navigation, layout at desktop/mobile widths, accessibilit
 - Desktop navigation and the rest of the website are unchanged.
 - v15 reinforces only the mobile Support/Podpora selected underline and refreshes the CSS version query on all six HTML pages.
 - No JavaScript. The local ZIP has not been published.
+
+
+## Website v16 — navigation text consistency
+
+- Desktop: selected Home / Features / In motion / Download / Support retains the normal navigation text color; selected state is the purple underline only. Mouse hover still changes text to purple.
+- Mobile navigation, Support underline, layouts, artwork, and all links stay unchanged from v15.
+- No JavaScript. styles.css query version updated on six pages to refresh cached styles.
