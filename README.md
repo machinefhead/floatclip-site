@@ -26,3 +26,10 @@ The site is plain HTML/CSS with local image assets. Changes to layout, imagery, 
 ## Publishing precautions
 
 Review links, language navigation, layout at desktop/mobile widths, accessibility, screenshot authenticity and both product editions before publishing. Preserve GitHub Release assets and the fixed Microsoft Store identity. Never upload private source, signing credentials, development logs or internal evidence to this public site.
+
+## Mobile navigation v14 (local candidate)
+
+- Selected Home / Features / In motion / Download / Support: underline only; all text stays the normal neutral color after touch.
+- A real mouse hover still turns the text violet; touch-simulated sticky hover cannot leave a permanent violet selection.
+- Desktop navigation and the rest of the website are unchanged.
+- No JavaScript. The local ZIP has not been published.
