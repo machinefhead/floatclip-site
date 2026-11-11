@@ -300,14 +300,12 @@ body:has(#download:target) .mobile-nav a[aria-current="page"]::after{transform:s
 .motion-lightbox-image img{display:block;width:100%;max-width:1530px;height:auto;
   max-height:calc(100vh - 107px);object-fit:contain;border-radius:9px;margin:auto}
 
-/* A cohesive purple-outline chip system in the two relevant sections. */
+/* A cohesive purple-outline chip system in the two relevant sections.
+   They are descriptive labels, not interactive buttons. */
 .feature-tags .feature-pair,.settings-note span{
   color:#e8e1f8;background:rgba(183,122,255,.075);
   border:1px solid rgba(183,122,255,.56);border-radius:9px;
-  box-shadow:none
-}
-.feature-tags .feature-pair:hover,.settings-note span:hover{
-  border-color:var(--violet);background:rgba(183,122,255,.12)
+  box-shadow:none;cursor:default;user-select:none;-webkit-user-select:none
 }
 .feature-tags .pair-divider{background:var(--violet);opacity:.82}
 .settings-note span{margin:0;padding:10px 13px;font-size:13.5px}
@@ -325,4 +323,48 @@ body:has(#download:target) .mobile-nav a[aria-current="page"]::after{transform:s
 }
 @media(prefers-reduced-motion:reduce){
   .desktop-nav a::after,.mobile-nav a::after{transition:none}
+}
+
+/* FloatClip Store download options: official unmodified white Microsoft badge
+   with its localized colored icon. No scripts or custom brand redraw. */
+.download-section .download-choices{
+  display:grid;grid-template-columns:max-content max-content;column-gap:18px;
+  align-items:center;justify-content:center;width:max-content;max-width:100%;
+  margin:23px auto 0
+}
+.download-section .download-choice{
+  display:flex;flex-direction:column;gap:22px;min-width:0
+}
+.download-section .download-choice-portable{align-items:flex-end}
+.download-section .download-choice-store{align-items:flex-start}
+.download-section .download-choice-portable .button{min-width:243px}
+.download-section .download-helper{font-size:13px;line-height:1.6;white-space:nowrap}
+.download-section .download-helper a{color:#b9d8ff;text-underline-offset:4px}
+.download-section .download-choice-portable .download-helper{text-align:right}
+.download-section .download-choice-store .download-helper{text-align:left}
+.download-section .store-badge-link{
+  display:inline-flex;align-items:center;justify-content:center;
+  text-decoration:none;line-height:1;border-radius:5px;max-width:100%;
+  transition:filter .18s ease,transform .18s ease
+}
+.download-section .store-badge-link img{width:197px;height:auto;max-width:100%;border-radius:5px}
+.download-section .store-badge-link:hover{filter:brightness(1.04);transform:translateY(-2px)}
+.download-section .store-badge-link:focus-visible{outline:3px solid var(--violet);outline-offset:4px}
+@media(max-width:620px){
+  .download-section .download-choices{
+    display:flex;flex-direction:column;align-items:center;gap:20px;
+    width:min(100%,350px);max-width:100%
+  }
+  .download-section .download-choice,.download-section .download-choice-portable,
+  .download-section .download-choice-store{align-items:center;max-width:100%;gap:10px}
+  .download-section .download-helper,.download-section .download-choice-portable .download-helper,
+  .download-section .download-choice-store .download-helper{
+    white-space:normal;text-align:center;max-width:100%
+  }
+  .download-section .download-choice-portable .button{min-width:235px;max-width:100%}
+  .download-section .store-badge-link img{width:185px}
+}
+@media(prefers-reduced-motion:reduce){
+  .download-section .store-badge-link{transition:none}
+  .download-section .store-badge-link:hover{transform:none}
 }
