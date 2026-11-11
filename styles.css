@@ -483,3 +483,15 @@ body:has(#download:target) .mobile-nav a[aria-current="page"]::after{transform:s
     color:var(--violet)!important;
   }
 }
+
+
+/* v15 — reinforce the selected Support link only in the mobile navigation.
+   Support/Podpora remains underlined on its destination page, while its text
+   follows exactly the existing v14 neutral / mouse-hover color behavior.
+   This does not change Home, hash links or desktop navigation. */
+@media(max-width:780px){
+  .mobile-nav a[href="support.html"][aria-current="page"]::after,
+  .mobile-nav a[href="support-sl.html"][aria-current="page"]::after{
+    transform:scaleX(1)!important;
+  }
+}
